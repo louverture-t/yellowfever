@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Yellow Fever Vaccine - Atlas IDP</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Light gray background */
+            color: #333;
+            line-height: 1.6;
+        }
+        .header-placeholder {
+            background-color: #fff; /* White background */
+            color: #20876f;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .header-placeholder h1 { 
+            margin: 0; 
+            font-size: 2em;
+        }
+        .nav-placeholder {
+            background-color: #e6fff9;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+        .nav-placeholder a {
+            color: #20876f;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('images/hero_main_travelers.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(123, 220, 181, 0.3) 0%, rgba(33, 135, 112, 0.4) 100%); /* Pastel green overlay */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Restored for readability */
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Restored for readability */
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .intro-text {
+            text-align: center;
+            margin-bottom: 2em;
+            padding: 1em;
+            background-color: #eaf2f8; /* Light blue accent */
+            border-left: 5px solid #00509e; /* Medium blue accent */
+            border-radius: 5px;
+        }
+        .intro-text h2 {
+            color: #003366; /* Dark blue */
+            margin-top: 0;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(33.333% - 40px); /* Adjust for gap, roughly 3 cards per row */
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .card img {
+            width: 100%;
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensures image covers the area, might crop */
+            border-bottom: 1px solid #ddd;
+        }
+        .card-content {
+            padding: 20px;
+            flex-grow: 1; /* Allows content to fill space */
+        }
+        .card h3 {
+            color: #00509e; /* Medium blue */
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        .card p {
+            font-size: 0.95em;
+            color: #555;
+        }
+        .hero .cta-button {
+            background-color: #218770;
+            color: white;
+        }
+        .hero .cta-button:hover {
+            background-color: #00d084;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #f0ad4e; /* Yellow/Orange from Atlas IDP buttons */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px; /* Pill shape */
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background-color: #ec971f; /* Darker yellow/orange */
+        }
+        .cta-section {
+            text-align: center;
+            padding: 30px 0;
+            margin: 2em 0;
+            background-color: #eaf2f8; /* Light blue accent */
+            border-radius: 5px;
+        }
+        .footer-placeholder {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .card {
+                width: calc(50% - 30px); /* 2 cards per row */
+            }
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+            .card {
+                width: calc(100% - 20px); /* 1 card per row */
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-placeholder">
+        <h1>Atlas Infectious Disease Practice, PLLC</h1>
+    </header>
+    <nav class="nav-placeholder">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Travel Clinic</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Travel Confidently with Atlas IDP</h1>
+            <p>Your Trusted, CDC-Approved Yellow Fever Vaccination Center</p>
+            <a href="#appointment" class="cta-button">Schedule an Appointment</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="intro-text">
+            <h2>Your Shield Against Yellow Fever: Protect Your Health on Your Travels</h2>
+            <p>Atlas IDP is one of the few CDC-approved clinics in the US authorized to administer yellow fever vaccines and issue the International Certificate of Vaccination or Prophylaxis (ICVP), also known as the "yellow card." With less than 3000 certified clinics nationwide holding the necessary uniform stamp, we are proud to offer this essential service. The ICVP is a legal document under the International Health Regulations of 2005 and is the only accepted proof of yellow fever vaccination required for entry into certain countries. Ensure your travels are safe and compliant by getting vaccinated at Atlas IDP.</p>
+        </div>
+
+        <div class="cards-container">
+            <!-- Card 1: What is Yellow Fever? -->
+            <div class="card">
+                <img src="images/cartoon_aedes_mosquito.png" alt="Aedes aegypti mosquito, carrier of Yellow Fever">
+                <div class="card-content">
+                    <h3>What is Yellow Fever?</h3>
+                    <p>Yellow fever is a serious, potentially life-threatening viral disease transmitted by infected mosquitoes, primarily the Aedes aegypti species. It is prevalent in tropical and subtropical regions of Africa and South America. Symptoms can range from mild fever and aches to severe liver disease with bleeding and jaundice (yellowing of the skin and eyes), which gives the disease its name. Vaccination is the single most important measure for preventing yellow fever.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: The Science of Protection -->
+            <div class="card">
+                <img src="images/vaccine_vial.jpeg" alt="Yellow Fever vaccine vial">
+                <div class="card-content">
+                    <h3>The Science of Protection: How the Vaccine Works</h3>
+                    <p>The yellow fever vaccine utilizes a live, attenuated (weakened) form of the virus, specifically the 17D strain. This weakened virus is incapable of causing the full-blown disease but is effective in stimulating the immune system. It essentially trains your body to recognize and fight off the actual yellow fever virus if you are exposed. The vaccine is typically stored in a freeze-dried (lyophilized) state to maintain its stability and is reconstituted with a diluent just before administration.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: How Immunity Develops -->
+            <div class="card">
+                <img src="images/antibody_response_graphic.jpeg" alt="Graphic showing immune system antibody response">
+                <div class="card-content">
+                    <h3>How Immunity Develops After Vaccination</h3>
+                    <p>Following vaccination, a very small amount of the weakened virus circulates in the body for a few days, typically between the 4th and 9th day. This low-level viremia is generally not enough to cause illness but is sufficient to trigger a robust immune response. Your body begins to produce specific antibodies against the yellow fever virus, providing long-lasting, often lifelong, protection. Most people develop protective immunity within 10 days of vaccination.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section" id="appointment_mid">
+            <h2>Ready to Plan Your Safe Travels?</h2>
+            <p>Ensure you are protected. Schedule your yellow fever vaccination with Atlas IDP today.</p>
+            <a href="#appointment" class="cta-button">Schedule an Appointment</a>
+        </div>
+
+        <div class="cards-container">
+            <!-- Card 4: Who Should Get Vaccinated? -->
+            <div class="card">
+                <img src="images/doctor_female_consultation.jpeg" alt="Doctor consulting with a patient about travel vaccinations">
+                <div class="card-content">
+                    <h3>Who Needs the Yellow Fever Vaccine?</h3>
+                    <p>The Advisory Committee on Immunization Practices (ACIP) recommends yellow fever vaccination for individuals aged 9 months or older who are traveling to or living in areas with a risk of yellow fever virus transmission. This includes many countries in sub-Saharan Africa and parts of South America, particularly during rainy seasons when mosquito populations are higher. Laboratory personnel who might be exposed to the yellow fever virus should also be vaccinated.</p>
+                </div>
+            </div>
+
+            <!-- Card 5: Understanding the Travel Risk -->
+            <div class="card">
+                <img src="images/yellow_fever_risk_map.png" alt="World map showing Yellow Fever risk areas">
+                <div class="card-content">
+                    <h3>Understanding Your Travel Risk</h3>
+                    <p>The risk of contracting yellow fever varies by destination, season, and activities. For unvaccinated travelers spending two weeks in a high-risk area of West Africa, the estimated risk of developing yellow fever is approximately 1 in 2,000, with a potential 1 in 10,000 chance of death. While the risk in South America is generally lower, it remains significant, and historically, if yellow fever is contracted, mortality rates can be as high as 73%. Vaccination significantly mitigates these risks.</p>
+                </div>
+            </div>
+
+            <!-- Card 6: The International Certificate (ICVP) -->
+            <div class="card">
+                <img src="images/yellow_fever_certificate.jpeg" alt="International Certificate of Vaccination or Prophylaxis (Yellow Card)">
+                <div class="card-content">
+                    <h3>The International Certificate of Vaccination (ICVP)</h3>
+                    <p>Often called the "yellow card," the ICVP is an official document proving you have received the yellow fever vaccine. Many countries require this certificate for entry, especially if you are arriving from or have transited through a country with a risk of yellow fever transmission. The certificate becomes valid 10 days after vaccination and is generally considered valid for life. Atlas IDP is a CDC-approved provider authorized to issue this crucial travel document.</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="intro-text" style="margin-top: 2em;">
+            <h2>Special Considerations for Vaccination</h2>
+            <p>While the yellow fever vaccine is highly effective, certain groups require careful evaluation by a physician before vaccination. This includes infants aged 6-8 months (vaccination considered only if travel to a high-risk area is unavoidable), adults aged 59 years or older receiving the vaccine for the first time (due to a slightly higher risk of severe side effects), asymptomatic HIV-infected individuals with a CD4 count between 200-499 cells/mm³, and pregnant or breastfeeding women (where the benefits of vaccination must clearly outweigh potential risks). Our infectious disease specialists at Atlas IDP will conduct a thorough pre-travel consultation to determine if the vaccine is appropriate for you.</p>
+        </div>
+
+        <div class="cta-section" id="appointment_bottom">
+            <h2>Protect Your Health. Travel with Peace of Mind.</h2>
+            <p>Don't let yellow fever disrupt your journey. Contact Atlas IDP to schedule your pre-travel consultation and vaccination.</p>
+            <a href="#appointment" class="cta-button">Schedule an Appointment Now</a>
+        </div>
+
+    </div>
+
+    <footer class="footer-placeholder">
+        <p>&copy; 2025 Atlas Infectious Disease Practice, PLLC. All rights reserved.</p>
+        <p>Disclaimer: This information is for educational purposes only and not a substitute for professional medical advice.</p>
+    </footer>
+
+</body>
+</html>
+
